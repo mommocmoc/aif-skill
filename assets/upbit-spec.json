@@ -1,0 +1,36 @@
+{
+  "name": "aif-upbit",
+  "short": "Upbit API CLI for AI Agents",
+  "auth_header": "Authorization",
+  "auth_prefix": "Bearer ",
+  "commands": [
+    {
+      "use": "getprice",
+      "short": "Get current price (ticker) of a market",
+      "method": "GET",
+      "endpoint": "https://api.upbit.com/v1/ticker",
+      "flags": ["markets"]
+    },
+    {
+      "use": "accounts",
+      "short": "Get my account balances",
+      "method": "GET",
+      "endpoint": "https://api.upbit.com/v1/accounts",
+      "flags": []
+    },
+    {
+      "use": "buy",
+      "short": "Place a market buy order (price is total KRW amount)",
+      "method": "POST",
+      "endpoint": "https://api.upbit.com/v1/orders",
+      "flags": ["market", "side", "price", "ord_type"]
+    },
+    {
+      "use": "sell",
+      "short": "Place a market sell order (volume is crypto amount)",
+      "method": "POST",
+      "endpoint": "https://api.upbit.com/v1/orders",
+      "flags": ["market", "side", "volume", "ord_type"]
+    }
+  ]
+}

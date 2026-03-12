@@ -1,0 +1,14 @@
+{
+  "name": "upost",
+  "short": "Upload-Post API CLI",
+  "commands": [
+    {
+      "use": "text",
+      "short": "Upload text to multiple social media platforms",
+      "method": "POST",
+      "endpoint": "https://api.upload-post.com/api/upload_text",
+      "flags": ["user", "title"],
+      "array_flags": ["platform"]
+    }
+  ]
+}
