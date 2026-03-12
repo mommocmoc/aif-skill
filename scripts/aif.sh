@@ -2,7 +2,7 @@
 set -e
 
 # Version and repository for the actual AIF Engine releases
-VERSION="v1.0.0"
+VERSION="v1.0.1"
 REPO="mommocmoc/aif-engine"
 BIN_DIR="$HOME/.local/bin/aif-engine-bin"
 BIN_PATH="$BIN_DIR/aif"
